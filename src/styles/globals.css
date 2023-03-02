@@ -8,3 +8,11 @@
 body{
   background-color: #070000;
 }
+
+h1, h2, h3, p, a, Link, li{
+  color: #ffffff;
+}
+
+span{
+  color: #D01C1C;
+}

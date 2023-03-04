@@ -7,4 +7,13 @@
   position: fixed;
   left: 0;
   bottom: 0;
+  justify-content: center;
+  display: flex;
+}
+
+.footerLink{
+  padding-top: 1rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  /* margin-bottom: .3vh; */
 }

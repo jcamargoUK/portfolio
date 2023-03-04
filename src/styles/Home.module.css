@@ -1,1 +1,20 @@
+.main{
+  width: 100vw;
+  align-items: center;
+ height: 90vh;
+}
 
+.container{
+  display: flex;
+  width: 100vw;
+}
+
+.welcomeMessage{
+  font-size: 2.4rem;
+  width: 92vw;
+  padding-left: 3rem;
+}
+
+.welcomeAnimation{
+  width: 100vw;
+}

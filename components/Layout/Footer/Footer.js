@@ -6,7 +6,7 @@ import Link from 'next/link'
 export default function Footer() {
   return (
     <div className={styles.main}>
-      <Link href='https://github.com/jcamargoUK'>
+      <Link className={styles.footerLink} href='https://github.com/jcamargoUK'>
         <Image
           src='/assets/github.png'
           width={30}
@@ -14,7 +14,7 @@ export default function Footer() {
           alt='gitHub link logo'
         />
       </Link>
-      <Link href='https://www.linkedin.com/in/julio-camargo-developer/'>
+      <Link className={styles.footerLink} href='https://www.linkedin.com/in/julio-camargo-developer/'>
         <Image
           src='/assets/linkedin.png'
           width={30}

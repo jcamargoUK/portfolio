@@ -11,8 +11,14 @@ body{
 
 h1, h2, h3, p, a, Link, li{
   color: #ffffff;
+  list-style-type: none;
+  text-decoration: none;
 }
 
 span{
   color: #D01C1C;
+}
+
+ul{
+  text-decoration: none;
 }

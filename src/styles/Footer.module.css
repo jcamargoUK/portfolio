@@ -1,0 +1,10 @@
+.main{
+  width: 92vw;
+  background-color: #070000;
+  margin-left: 4vw;
+  border-top: 1px solid #FC0606 ;
+  height: 10vh;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}

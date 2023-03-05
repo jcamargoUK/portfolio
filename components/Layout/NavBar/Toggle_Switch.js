@@ -1,13 +1,23 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from "@/styles/ToggleSwitch.module.css";
-
 
 const ToggleSwitch = () => {
   const [isChecked, setIsChecked] = useState(false);
+  const [themeMode, setThemeMode] = useState("dark");
+
 
   const handleToggle = () => {
     setIsChecked(!isChecked);
+    setThemeMode(themeMode === "dark" ? "light" : "dark");
+
   };
+
+  useEffect(() => {
+    const body = document.querySelector('body');
+    body.classList.toggle('light-mode', themeMode === "light");
+    const h1 = document.getElementsByClassName('h1')
+    
+  }, [themeMode]);
 
   return (
     <div className={styles.toggleSwitch}>

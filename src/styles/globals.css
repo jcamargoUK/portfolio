@@ -9,11 +9,16 @@ body{
   background-color: #070000;
 }
 
+body.light-mode{
+  background-color: #ffffff;
+}
+
 h1, h2, h3, p, a, Link, li{
   color: #ffffff;
   list-style-type: none;
   text-decoration: none;
 }
+
 
 span{
   color: #FC0606;

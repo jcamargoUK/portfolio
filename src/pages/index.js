@@ -1,7 +1,8 @@
 // import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
 import Image from 'next/image'
-
+import Link from 'next/link'
+import Getting_In_Touch_Button from '../../components/Layout/Getting_In_Touch_Button/GettingInTouch'
 export default function Home() {
 
   return (
@@ -10,18 +11,24 @@ export default function Home() {
         <div className={styles.welcomeMessage}>
           <h1><span>Hi,<br /></span> My name is Julio,
             a Web Developer based in London</h1>
+          <Getting_In_Touch_Button />
         </div>
 
         <div className={styles.welcomeAnimation}>
           <h1>The anime goes here!</h1>
         </div>
       </div>
-      {/* <Image
-        src={ }
-        width={40}
-        height={40}
-        alt='arrow down link'
-      /> */}
+      <div className='arrowContainer'>
+        <Link href='/about'>
+          <Image className={styles.arrowDown}
+            src='/assets/double-down-100.png'
+            width={50}
+            height={50}
+            alt='arrow down link'
+          />
+        </Link>
+      </div>
+
 
 
     </div>

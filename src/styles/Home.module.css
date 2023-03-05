@@ -10,11 +10,29 @@
 }
 
 .welcomeMessage{
-  font-size: 2.4rem;
+  font-size: 2.8vw;
   width: 92vw;
   padding-left: 3rem;
 }
 
 .welcomeAnimation{
   width: 100vw;
+  align-items: center;
+  text-align: center;
+}
+
+.arrowDown{
+  width: auto;
+  display: block;
+  margin: auto;
+  padding-bottom: .5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .welcomeMessage{
+    font-size: 1.5rem;
+    width: 92vw;
+    padding-left: 2rem;
+    padding-top: 1rem;
+  }
 }

@@ -1,0 +1,11 @@
+.arrowContainer{
+  width: 5rem;
+  margin: auto;
+  margin-top: 2rem; 
+}
+
+.arrowDown{
+  width: auto;
+  display: block;
+  margin: auto;
+}

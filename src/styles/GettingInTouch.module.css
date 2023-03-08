@@ -1,7 +1,16 @@
+
+.Getting_In_Touch_Button_Container{
+  margin-top: 3rem;
+  margin-left: 3rem;
+}
+
+
+
 .button{
   font-size: 1rem;
   border: 1px solid red;
   padding: .7rem;
   border-radius: 100px;
   color: red;
+  
 }

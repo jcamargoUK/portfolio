@@ -21,13 +21,6 @@
   text-align: center;
 }
 
-.arrowDown{
-  width: auto;
-  display: block;
-  margin: auto;
-  padding-bottom: .5rem;
-}
-
 @media screen and (max-width: 768px) {
   .welcomeMessage{
     font-size: 1.5rem;

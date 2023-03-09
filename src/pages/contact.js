@@ -1,4 +1,4 @@
-import { ContactUs } from "../../components/Layout/Contact/Contact"
+import ContactUs from "../../components/Layout/Contact/Contact"
 
 export default function Contact(){
   return(

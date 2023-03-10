@@ -1,0 +1,109 @@
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+
+.container{
+  width: 100vw;
+  margin-top: 3vh;
+}
+
+.flexContainer{
+  display: flex;
+  width: 100vw;
+  margin-top: 3vh;
+}
+
+
+.formContainer{
+  background: #07000000;
+  font-family: 'Merriweather', sans-serif;
+  padding: 1em;
+  width: 50%;
+  margin: 3vh auto;
+}
+
+.mapContainer{
+  width: 50%;
+}
+
+.h1 {
+  text-align: center;
+  color: #FC0606;
+}
+
+
+.cf{
+  text-align: center;
+  margin: 20px auto;
+  width: 100%;
+}
+
+.styles.inputContainer{
+  width: 80%;
+}
+
+.input{
+  border: 0;
+  outline: 0;
+  padding: 1em;
+  border-radius: 8px;
+  display: block;
+  width: 80%;
+  height: 50px;
+  margin-top: 1em;
+  resize: none;
+  font-size: .8em;
+  margin-left: 2.5rem;
+}
+
+.textArea{
+  border: 0;
+  outline: 0;
+  padding: 1em;
+  border-radius: 8px;
+  display: block;
+  width: 80%;
+  height: 170px;
+  margin-top: 1em;
+  resize: none;
+  font-size: 1em;
+  margin-left: 2.5rem;
+}
+
+.submitContainer{
+  width: 50vw;
+  margin: auto;
+  align-items: center;
+}
+
+.submit{
+  border: 0;
+  outline: 0;
+  padding: 1em;
+  border-radius: 100px;
+  width: 14vw;
+  height: 7vh;
+  margin: auto;
+  margin-top: 2vh;
+  color: #ffffff;
+  background-color: #FC0606;
+  font-size: 1rem;
+  letter-spacing: .2em;
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .half {
+    width: 100%;
+    float: none;
+    margin-bottom: 0;
+  }
+}
+
+.cf:before,
+.cf:after {
+  content: ' ';
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}

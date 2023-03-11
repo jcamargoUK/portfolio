@@ -3,14 +3,16 @@ import styles from "@/styles/NavBar.module.css";
 import ToggleSwitch from "./Toggle_Switch";
 import React, { useState } from "react";
 
-
-
+// Main NavBar component
 export default function NavBar() {
 
+  // State for the toggle button
   const [isOpen, setIsOpen] = useState(false);
-const handleToggle = () => {
-  setIsOpen(!isOpen);
-};
+  // Function to toggle the state of the toggle button
+  const handleToggle = () => {
+    // Set the state of the toggle button to the opposite of what it is
+    setIsOpen(!isOpen);
+  };
 
   return (
     <div className={styles.container}>
@@ -23,16 +25,16 @@ const handleToggle = () => {
       </button>
       <ul className={`${styles.links} ${isOpen ? styles.open : ''}`}>
         <li>
-          <Link href="/">Home</Link>
+          <Link href="/" onClick={handleToggle}>Home</Link>
         </li>
         <li>
-          <Link href="/about">About</Link>
+          <Link href="/about" onClick={handleToggle}>About</Link>
         </li>
         <li>
-          <Link href="/portfolio">Portfolio</Link>
+          <Link href="/portfolio" onClick={handleToggle}>Portfolio</Link>
         </li>
         <li>
-          <Link href="/contact">Contact Me</Link>
+          <Link href="/contact" onClick={handleToggle}>Contact Me</Link>
         </li>
       </ul>
       <ToggleSwitch />

@@ -30,7 +30,7 @@
   padding-right: 2rem;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 625px) {
   .toggle {
     display: block;
   }

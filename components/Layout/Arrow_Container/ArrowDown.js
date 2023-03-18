@@ -1,18 +1,14 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import styles from '@/styles/ArrowDown.module.css'
 
 
 export default function ArrowDown() {
   return (
-    <div className={styles.arrowContainer}>
+    <div className={styles.container}>
       <Link href='/about'>
-        <Image className={styles.arrowDown}
-          src='/assets/double-down-100.png'
-          width={60}
-          height={60}
-          alt='arrow down link'
-        />
+        <div className={styles.toggle}>
+          <div className={styles.ball} />
+        </div>
       </Link>
     </div>
   )

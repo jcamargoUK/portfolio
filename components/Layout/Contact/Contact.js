@@ -149,7 +149,7 @@ function ContactForm() {
           </form>
         </div>
         <div className={styles.mapContainer}>
-          <h1>map goes here</h1>
+          {/* <h1>map goes here</h1> */}
         </div>
       </div>
     </div>

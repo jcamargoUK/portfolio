@@ -14,6 +14,7 @@ export default function Home() {
             a Web Developer based in London</h1>
         </div>
         <div className={styles.welcomeAnimation}>
+          <p className={styles.p}>Hello Folks, this is page is in development stage and will be up and running by April 2023.</p>
         </div>
       </div>
       <Getting_In_Touch_Button />

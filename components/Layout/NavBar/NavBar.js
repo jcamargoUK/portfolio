@@ -37,7 +37,7 @@ export default function NavBar() {
           <Link href="/contact" onClick={handleToggle}>Contact Me</Link>
         </li>
       </ul>
-      <ToggleSwitch />
+      {/* <ToggleSwitch /> */}
     </div>
   );
 }

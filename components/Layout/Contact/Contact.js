@@ -1,158 +1,164 @@
-// import React, { useRef } from 'react';
 // import emailjs from '@emailjs/browser';
+// import styles from "../../../src/styles/ContactUs.module.css"
+// import { useRef, useState } from 'react';
+// emailjs.init("tligEdje5qeglTeZy")
 
-// export const ContactUs = () => {
-//   const form = useRef();
+// function ContactForm() {
+//   const formRef = useRef();
+//   const [form, setForm] = useState({
+//     name: "",
+//     email: "",
+//     message: "",
+//   });
 
-//   const sendEmail = (e) => {
-//     e.preventDefault();
+//   const [loading, setLoading] = useState(false);
 
-//     emailjs.sendForm('service_fr94leh', 'template_u3ohpes', form.current, 'M2ce014ipX35qbMwx')
-//       .then((result) => {
-//           console.log(result.text);
-//       }, (error) => {
-//           console.log(error.text);
-//       });
+//   const handleChange = (e) => {
+//     const { name, value } = e.target;
+//     setForm({ ...form, [name]: value });
 //   };
 
-//   return (
-//     <form ref={form} onSubmit={sendEmail}>
-//       <label><p>Name</p></label>
-//       <input type="text" name="user_name" />
-//       <label><p>Email</p></label>
-//       <input type="email" name="user_email" />
-//       <label><p>Message</p></label>
-//       <textarea name="message" />
-//       <input type="submit" value="Send" />
-//     </form>
-//   );
-// };
-
-// import React, { useState, useRef } from "react";
-// import styles from "../../../src/styles/PopUp.module.css"
-// import emailjs from "@emailjs/browser";
-
-// function ContactUs({ user_email, handleClose, showEmailToast }) {
-//   const form = useRef();
-//   const [success, setSuccess] = useState(false);
 //   const handleSubmit = (e) => {
 //     e.preventDefault();
+//     setLoading(true);
 
-//     emailjs
-//       .sendForm(
-//         "service_fr94leh",
-//         "template_u3ohpes",
-//         form.current,
-//         "M2ce014ipX35qbMwx"
-//       )
-//       .then(
-//         (result) => {
-//           console.log(result.text);
-//           // showEmailToast(result.text, null);
+//     emailjs.send(
+//         // process.env.REACT_APP_SERVICE_ID,
+//         'service_fr94leh',
 
-//           // text is email is sent succsefully?
+//         // process.env.REACT_APP_TEMPLATE_ID,
+//         'template_u3ohpes',
+//         {
+//           from_name: form.name,
+//           to_name: "Julio",
+//           from_email: form.email,
+//           to_email: " jcamargo1975@gmail.com",
+//           message: form.message,
 //         },
-//         (error) => {
-//           console.log(error.text);
-//           showEmailToast(null, error.text);
-//           //text if email cant be sent
-//         }
-//       );
+//         'tligEdje5qeglTeZy',
+//       )
+//       .then(() => {
+//           setLoading(false);
+//           alert("Email successfully sent!");
 
-//     setSuccess(true);
-//     form.current.reset();
-//     // handleClose();
-//     // setTimeout(TimerHandler, 2000)
+//           setForm({
+//             name: "",
+//             email: "",
+//             message: "",
+//           })
+//         }, (error) => {
+//           setLoading(false);
+//           alert("An error occurred, Please try again");          
+//         });
 //   };
 
-//   function TimerHandler() {
-//     setSuccess(false);
-//   }
-
 //   return (
-//     <div className={styles["form-container"]}>
-//       <div className={styles["header-container"]}>
-//         <div></div> <h2 className={styles.heading}>Contact Form</h2>
+//     <div className={styles.container}>
+//       <h1 className={styles.h1}>Contact Form</h1>
+//       <div className={styles.flexContainer}>
+//         <div className={styles.formContainer}>
+//           <form ref={formRef} className={styles.cf} onSubmit={handleSubmit}>
+//             <div className={styles.inputContainer}>
+//               <input className={styles.input} type='text' placeholder='Name' name='user_name' onChange={handleChange} />
+//               <input className={styles.input} type='email' placeholder='Email address' name='user_email' onChange={handleChange} />
+//             </div>
+//             <div>
+//               <textarea className={styles.textArea} name='message' type='text' placeholder='Message' onChange={handleChange}></textarea>
+//             </div>
+//             <div className={styles.submitContainer}>
+//               <input className={styles.submit} type='Submit' value='Submit' />
+//             </div>
+//           </form>
+//         </div>
+//         <div className={styles.mapContainer}>
+//           {/* <h1>map goes here</h1> */}
+//         </div>
 //       </div>
-
-//       <form ref={form} className={styles["form"]} onSubmit={handleSubmit}>
-//         <label className={styles["label"]}>Name:</label>
-//         <input className={styles["input"]} type="text" name="name" />
-//         <input
-//           hidden={true}
-//           type="text"
-//           name="email"
-//           defaultValue={user_email}
-//         />
-//         <label className={styles["label"]}>Email:</label>
-//         <input className={styles["input"]} type="text" name="sender_email" />
-//         <label className={styles["label"]}>Message:</label>
-//         <textarea
-//           className={styles["input-textarea"]}
-//           type="text"
-//           name="message"
-//         />
-//         <button className={styles.button} type="submit">
-//           Submit
-//         </button>
-//       </form>
-
-//       <p hidden={!success}>Email Successfully Sent</p>
 //     </div>
 //   );
 // }
+// export default ContactForm;
+
+
+
+import { useState } from 'react';
 import emailjs from '@emailjs/browser';
-import React, { useRef } from "react";
-import styles from "../../../src/styles/ContactUs.module.css"
 
-function ContactForm() {
+function EmailJSContactForm() {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState(false);
 
-  const form = useRef()
-
-  const sendEmail = (e) => {
+  function handleSubmit(e) {
     e.preventDefault();
+    setLoading(true);
+
+    // Send the email using EmailJS
     emailjs
       .sendForm(
-        process.env.REACT_APP_SERVICE_ID,
-        process.env.REACT_APP_TEMPLATE_ID,
-        form.current,
-        process.env.REACT_APP_PUBLIC_KEY
+        'service_fr94leh',
+        'template_u3ohpes',
+        e.target,
+        'tligEdje5qeglTeZy'
       )
-      .then(
-        (result) => {
-          alert("Email successfully sent!");
-          console.log(result.text);
+      .then(() => {
+        setLoading(false);
+        setSuccess(true);
+        setName('');
+        setEmail('');
+        setMessage('');
+      })
+      .catch((error) => {
+        setLoading(false);
+        console.error('Failed to send email. Error:', error);
+      });
+  }
 
-        },
-        (error) => {
-          alert("An error occurred, Please try again");
-          console.log(error.text);
-        }
-      );
-  };
   return (
-    <div className={styles.container}>
-      <h1 className={styles.h1}>Contact Form</h1>
-      <div className={styles.flexContainer}>
-        <div className={styles.formContainer}>
-          <form ref={form} className={styles.cf} onSubmit={sendEmail}>
-            <div className={styles.inputContainer}>
-              <input className={styles.input} type='text' placeholder='Name' name='user_name' />
-              <input className={styles.input} type='email' placeholder='Email address' name='user_email' />
-            </div>
-            <div>
-              <textarea className={styles.textArea} name='message' type='text' placeholder='Message'></textarea>
-            </div>
-            <div className={styles.submitContainer}>
-              <input className={styles.submit} type='submit' value='Submit' />
-            </div>
-          </form>
-        </div>
-        <div className={styles.mapContainer}>
-          {/* <h1>map goes here</h1> */}
-        </div>
+    <form onSubmit={handleSubmit}>
+      <div>
+        <label htmlFor="name">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          required
+        />
       </div>
-    </div>
+      <div>
+        <label htmlFor="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          required
+        />
+      </div>
+      <div>
+        <label htmlFor="message">Message</label>
+        <textarea
+          id="message"
+          name="message"
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
+          required
+        />
+      </div>
+      {loading ? (
+        <p>Sending...</p>
+      ) : success ? (
+        <p>Email sent successfully!</p>
+      ) : (
+        <button type="submit">Send Email</button>
+      )}
+    </form>
   );
 }
-export default ContactForm;
+
+export default EmailJSContactForm;

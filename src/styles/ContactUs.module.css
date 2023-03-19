@@ -1,23 +1,24 @@
+
 @import url(https://fonts.googleapis.com/css?family=Merriweather);
 
 .container{
   width: 100vw;
-  margin-top: 3vh;
+  margin-top: 1vh;
 }
 
 .flexContainer{
   display: flex;
   width: 100vw;
-  margin-top: 3vh;
 }
-
 
 .formContainer{
   background: #07000000;
   font-family: 'Merriweather', sans-serif;
   padding: 1em;
   width: 50%;
-  margin: 3vh auto;
+  height: 50vh;
+  margin: 0 auto;
+  
 }
 
 .mapContainer{
@@ -29,10 +30,8 @@
   color: #FC0606;
 }
 
-
 .cf{
   text-align: center;
-  margin: 20px auto;
   width: 100%;
 }
 
@@ -51,7 +50,10 @@
   margin-top: 1em;
   resize: none;
   font-size: .8em;
-  margin-left: 2.5rem;
+  margin-left: 3vw;
+  color: #FC0606;
+  border: 1.5px solid #FC0606;
+  background-color: #07000000;
 }
 
 .textArea{
@@ -65,26 +67,33 @@
   margin-top: 1em;
   resize: none;
   font-size: 1em;
-  margin-left: 2.5rem;
+  margin-left: 3vw;
+  color: #FC0606;
+  border: 1.5px solid #FC0606;
+  background-color: #07000000;
 }
 
 .submitContainer{
-  width: 50vw;
+  width: 100vw;
   margin: auto;
   align-items: center;
-}
+  text-align: left;
+  margin-left: 2.5rem;
+  top: 1rem;
+  height: 7vh;
+} 
 
 .submit{
   border: 0;
   outline: 0;
-  padding: 1em;
   border-radius: 100px;
   width: 14vw;
   height: 7vh;
   margin: auto;
-  margin-top: 2vh;
-  color: #ffffff;
-  background-color: #FC0606;
+  margin-top: 2vh; 
+  color: #FC0606;
+  border: 1.5px solid #FC0606;
+  background-color: #07000000;
   font-size: 1rem;
   letter-spacing: .2em;
   cursor: pointer;

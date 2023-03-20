@@ -15,6 +15,59 @@
   width: 50vw;
   padding-left: 3rem;
 }
+.nameSpan1{
+  color: #ffffffff;
+  animation: flip 5s infinite;
+  position: relative;
+  display: inline-block;
+}
+.nameSpan2{
+  color: #ffffffff;
+  animation: flip 7s infinite;
+  position: relative;
+  display: inline-block;
+  animation-delay: .8s;
+}
+.nameSpan3{
+  color: #ffffffff;
+  animation: flip 7s infinite;
+  position: relative;
+  display: inline-block;
+  animation-delay: 1.6s;
+
+}
+.nameSpan4{
+  color: #ffffffff;
+  animation: flip 7s infinite;
+  position: relative;
+  display: inline-block;
+  animation-delay: 2.4s;
+
+}
+.nameSpan5{
+  color: #ffffffff;
+  animation: flip 7s infinite;
+  position: relative;
+  display: inline-block;
+  animation-delay: 3.2s;
+
+}
+
+.nameSpan6{
+  color: #ffffffff;
+  animation: flip 7s infinite;
+  position: relative;
+  display: inline-block;
+  animation-delay: 4s;
+
+}
+
+
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg) 
+  }
+}
 
 .imageContainer{
   width: 40vw;

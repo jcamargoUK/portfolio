@@ -10,7 +10,7 @@ export default function Home() {
     <div className={styles.main}>
       <div className={styles.container}>
         <div className={styles.welcomeMessage}>
-          <h1><span>Hi. </span> I'm Julio, <br className={styles.breakLine} />
+          <h1><span>Hi. </span> Im Julio, <br className={styles.breakLine} />
            a Web Developer based in London</h1>
         </div>
         <div className={styles.imageContainer}>

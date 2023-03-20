@@ -1,7 +1,8 @@
 .main{
   width: 100vw;
   align-items: center;
- height: 90vh;
+ /* height: 90vh; */
+ margin-top: 4.4rem;
 }
 
 .container{
@@ -10,15 +11,22 @@
 }
 
 .welcomeMessage{
-  font-size: 2.8vw;
-  width: 92vw;
+  font-size: 2.3rem;
+  width: 50vw;
   padding-left: 3rem;
 }
 
-.welcomeAnimation{
-  width: 100vw;
+.imageContainer{
+  width: 40vw;
   align-items: center;
   text-align: center;
+  position: relative;
+
+}
+
+.image{
+  display: block;
+  
 }
 
 .p{
@@ -27,8 +35,11 @@
   padding: 1rem;
 }
 
-@media screen and (max-width: 700px){
-  .container{
+@media screen and (max-width: 900px){
+  .main{
+    margin-top: 1rem;
+  }
+   .container{
     display: flex;
     flex-direction: column;
     width: 100vw;
@@ -36,9 +47,20 @@
     font-size: 2.8vw;
     width: 92vw;
     padding-left: 3rem;
-    padding-top: 1rem;
     line-height: 2rem;
   }
+
+  .welcomeMessage{
+    font-size: 1.8rem;
+    width: 90vw;
+    /* padding-left: 1rem; */
+    /* height: 30vh;
+    line-height: 4rem;
+    padding: 0; */
+  }
+  .breakLine{
+    display: none;
+  } 
 }
 
 @media screen and (max-width: 768px) {

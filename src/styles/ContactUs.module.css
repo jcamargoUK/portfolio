@@ -4,32 +4,41 @@
 .container{
   width: 100vw;
   margin-top: 1vh;
+  height: 100vh;
 }
 
 .flexContainer{
   display: flex;
   width: 100vw;
 }
-
 .formContainer{
   background: #07000000;
   font-family: 'Merriweather', sans-serif;
   padding: 1em;
-  width: 50%;
-  height: 50vh;
-  margin: 0 auto;
-  
+  width:50%;
+  /* height: 50vh; */
+  margin: 0 auto;  
 }
 
 .mapContainer{
+  /* width: auto;
+  height: auto; */
   width: 50%;
-  margin-top: 1.5rem;
-  margin-left: 5.5rem;
+  margin-top: 1.5rem; 
+}
+
+.iFrame{
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  float: right;
+  margin-right: 3.5rem;
 }
 
 .h1 {
   text-align: center;
   color: #FC0606;
+  padding-bottom: 1em;
 }
 
 .cf{
@@ -82,7 +91,7 @@
   text-align: left;
   margin-left: 2.5rem;
   top: 1rem;
-  height: 7vh;
+  /* height: 7vh; */
 } 
 
 .submit{
@@ -101,14 +110,6 @@
   cursor: pointer;
 }
 
-@media (max-width: 480px) {
-  .half {
-    width: 100%;
-    float: none;
-    margin-bottom: 0;
-  }
-}
-
 .cf:before,
 .cf:after {
   content: ' ';
@@ -118,3 +119,28 @@
 .cf:after {
   clear: both;
 }
+/* @media screen and (max-width: 1200px){
+  .formContainer{
+    width: 50vw;
+  }
+} */
+
+
+@media screen and (max-width: 900px){
+  .flexContainer{
+    flex-direction: column;
+  }
+  .submit{
+    width: 10vw;
+    height: 5vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .half {
+    width: 100%;
+    float: none;
+    margin-bottom: 0;
+  }
+}
+

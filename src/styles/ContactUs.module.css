@@ -6,7 +6,6 @@
   margin-top: 1vh;
   height: 100vh;
 }
-
 .flexContainer{
   display: flex;
   width: 100vw;
@@ -19,7 +18,6 @@
   /* height: 50vh; */
   margin: 0 auto;  
 }
-
 .mapContainer{
   /* width: auto;
   height: auto; */
@@ -127,20 +125,47 @@
 
 
 @media screen and (max-width: 900px){
+  .h1{
+    padding-bottom: 0;
+  }
   .flexContainer{
     flex-direction: column;
   }
+  .input{
+    height: 35px;
+    width: 100%;
+    margin-left: 0;
+
+  }
+  .textArea{
+    height: 120px;
+    width: 100%;
+    margin-left: 0;
+  }
+  .mapContainer{
+    width: 50%;
+    margin: auto;
+    margin-top: 6vh;
+    position: relative;
+  }
+  .iFrame{
+    float:none;
+    width: 100%;
+  }
+  .submitContainer{
+    width: auto; 
+    margin: auto;
+  }
   .submit{
     width: 10vw;
-    height: 5vh;
+    height: 3.5vh;
+  }
+}
+@media screen and(max-width: 475px){
+  .submit{
+    width: 17vw;
+    height: 3.5vh;
   }
 }
 
-@media (max-width: 480px) {
-  .half {
-    width: 100%;
-    float: none;
-    margin-bottom: 0;
-  }
-}
 

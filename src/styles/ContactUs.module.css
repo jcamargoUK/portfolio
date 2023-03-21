@@ -4,7 +4,7 @@
 .container{
   width: 100vw;
   margin-top: 1vh;
-  height: 100vh;
+  height: 85vh;
 }
 .flexContainer{
   display: flex;
@@ -44,8 +44,8 @@
   width: 100%;
 }
 
-.styles.inputContainer{
-  width: 80%;
+.inputContainer{
+  width: 100%;
 }
 
 .input{
@@ -161,11 +161,12 @@
     height: 3.5vh;
   }
 }
-@media screen and(max-width: 475px){
+@media screen and (max-width: 600px){
   .submit{
-    width: 17vw;
-    height: 3.5vh;
+    width: 15vw;
+    height: 4vh;
   }
+  
 }
 
 

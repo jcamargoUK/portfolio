@@ -2,7 +2,7 @@ import Link from "next/link";
 import styles from "@/styles/NavBar.module.css";
 import ToggleSwitch from "./Toggle_Switch";
 import React, { useState } from "react";
-
+import Image from "next/image";
 // Main NavBar component
 export default function NavBar() {
 
@@ -16,7 +16,14 @@ export default function NavBar() {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.h1}>JC</h1>
+      <div className={styles.logo}>
+        <Image 
+          src='/assets/jc-logo-transparent-background.png' 
+          alt="JC Logo"
+          width={35}
+          height={40} 
+        />
+      </div>
       <button
         className={styles.toggle}
         onClick={handleToggle}
@@ -25,16 +32,16 @@ export default function NavBar() {
       </button>
       <ul className={`${styles.links} ${isOpen ? styles.open : ''}`}>
         <li>
-          <Link href="/" onClick={handleToggle}>Home</Link>
+          <Link href="/" onClick={handleToggle} className={styles.link}>Home</Link>
         </li>
         <li>
-          <Link href="/about" onClick={handleToggle}>About</Link>
+          <Link href="/about" onClick={handleToggle} className={styles.link}>About</Link>
         </li>
         <li>
-          <Link href="/portfolio" onClick={handleToggle}>Portfolio</Link>
+          <Link href="/portfolio" onClick={handleToggle} className={styles.link}>Portfolio</Link>
         </li>
         <li>
-          <Link href="/contact" onClick={handleToggle}>Contact Me</Link>
+          <Link href="/contact" onClick={handleToggle} className={styles.link}>Contact Me</Link>
         </li>
       </ul>
       {/* <ToggleSwitch /> */}

@@ -13,6 +13,10 @@
   border-bottom: 1px solid #FC0606;
 }
 
+.logo{
+  margin-top: .5rem;
+}
+
 .toggle {
   display: none;
   background: none;
@@ -28,6 +32,11 @@
   min-width: 18rem;
   justify-content: space-between;
   padding-right: 2rem;
+}
+
+.link:hover{
+  color: #FC0606;
+  transition: 1s;
 }
 
 @media (max-width: 625px) {

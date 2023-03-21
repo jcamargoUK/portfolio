@@ -1,28 +1,4 @@
 
-/* .Getting_In_Touch_Button_Container{  
-  display: flex;
-  align-items: center;
-  bottom: 60px;
-  left: 50px;
-  position: absolute;
-  text-align: center;
-  width: 10rem;
-  padding: auto;
-  height: 7rem;
-}
-.button{
-  font-size: 1rem;
-  border: 1px solid red;
-  padding: 0.8rem;
-  border-radius: 100px;
-  color: red;
-  height: 3rem;
-  width: 7rem;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-} */
-
 .Getting_In_Touch_Button_Container{
   margin-top: 3rem;
   margin-left: 3rem;
@@ -32,6 +8,11 @@
   border: 1px solid red;
   padding: .7rem;
   border-radius: 100px;
-  color: red;
-  
+  color: red; 
+}
+.button:hover{
+  background-color: red;
+  color: #070707;
+  border: 1px solid #070707;
+  transition: 1.5s;
 }

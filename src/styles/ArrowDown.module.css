@@ -10,7 +10,7 @@
  width: 25px;
  height: 53px;
  border-radius: 100px;
- border: 4px solid #FC0606;
+ border: 3px solid #FC0606;
  display: flex;
  justify-content: center;
  /* align-items: start; */
@@ -22,6 +22,28 @@
   border-radius: 100px;
   background-color: #FC0606;
   animation: bounce 2.5s infinite;
+}
+
+@media screen and (max-width: 900px){
+  .container{
+    position: absolute;
+    bottom: -1.5vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .toggle{
+   width: 21px;
+   height: 49px;
+   border-radius: 100px;
+   padding: 0.15rem;
+  }
+  .ball{
+    width: 22px;
+    height: 19px;
+    border-radius: 100px;
+  }
 }
 @keyframes bounce {
   0% {

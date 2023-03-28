@@ -14,9 +14,19 @@ export default function Portifolio() {
             src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFYySVxGA0&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
           </iframe>
         </div>
-        <div className={styles.card}>Two</div>
-        <div className={styles.card}>Three</div>
-        <div className={styles.card}>Four</div>
+        <div className={styles.card}>
+          <iframe className={styles.iframe} loading="lazy"
+            src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFYySVxGA0&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+          </iframe>
+        </div>
+        <div className={styles.card}>
+          <iframe className={styles.iframe} loading="lazy"
+            src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFYySVxGA0&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+          </iframe>
+        </div>
+        <div className={styles.card}><iframe className={styles.iframe} loading="lazy"
+          src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFYySVxGA0&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+        </iframe></div>
       </div>
       <Getting_In_Touch_Button />
       <ArrowDown />

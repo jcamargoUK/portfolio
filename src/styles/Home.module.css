@@ -102,6 +102,10 @@
     padding-left: 3rem;
     line-height: 2rem;
   }
+  .welcomeMessage{
+    padding-left: 0rem;
+    width: 100vw;
+  }
 
   .welcomeMessage{
     font-size: 1.8rem;

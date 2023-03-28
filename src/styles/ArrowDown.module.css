@@ -27,7 +27,6 @@
 @media screen and (max-width: 900px){
   .container{
     position: absolute;
-    bottom: -1.5vh;
     width: 100%;
     display: flex;
     justify-content: center;

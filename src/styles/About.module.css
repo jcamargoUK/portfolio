@@ -1,89 +1,93 @@
 .main{
   display: flex;
-  flex-direction: column;
+  /* flex-direction: row; */
   font-size: 2.8vw;
-  width: 94vw;
+  width: 100vw;
   padding-left: 3rem;
   padding-top: 1rem;
   line-height: 2rem;
-  height: auto;
-  /* align-items: center; */
-  /* text-align: center; */
+  /* height: auto; */
+  align-items: center; 
+  text-align: center;
+}
+.container{
+  width: 100vw;
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  /* margin-top: 1rem; */
+  /* margin-bottom: 1rem; */
 }
 
 .about{
-  width: 42vw;
-  font-size: 2vw;
+  width: 60vw;
+  font-size: 2.4vw;
   margin-top: 1.1rem;
-  height: auto;
+  /* height: 100vh; */
   margin-left: 3.5vw;
+  padding-right: 5.5vw;
   }
 
 .p{
-  margin-top: 1.7rem;
+  margin-top: 1.9rem;
   
 }
-/* .arrowContainer{
-  width: 5rem;
-  margin: auto;
-  margin-top: 1rem; 
-  align-items: center;
-  text-align: center;
-
+.logoDiv{
+  width: 30vw;
+  /* height: 70vh; */
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 15px;
+  padding-left: 10vw;
+  padding-top: 10vh;
 }
-
-.arrowDown{
-  width: auto;
+.logoContainer{
   display: block;
-  margin: auto;
-} */
+  width: 45px;
+  height: 50px;
+}
 
 
 
 
 @media screen and (max-width: 1440px){
   .main{
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    font-size: 2.8vw;
-    width: 92vw;
-    padding-left: 3rem;
-    padding-top: 1rem;
+ 
     line-height: 2rem;
   }
 
   .about{
-    width: 38vw;
+    width: 50vw;
     font-size: 1.7vw;
-    margin-top: 1.1rem;
     }
-
-  .p{
-    margin-top: 1.7rem;
-    
-  }
-  /* .arrowContainer{
-    width: 5rem;
-    margin: auto;
-    margin-top: 1rem; 
-    align-items: center;
-    text-align: center;
-  
-  }
-  
-  .arrowDown{
-    width: auto;
-    display: block;
-    margin: auto;
-  } */
 }
 
 @media screen and (max-width: 1024px){
 
 .about{
-  width: 50vw;
   font-size: 2.5vw;
+  }
+}
+
+@media screen and (max-width: 900px){
+  .container{
+    flex-direction: column;
+  }
+  .about{
+    width: 90vw;
+    margin-top: 0.5rem;
+  }
+  .p{
+    margin-top: 0.5rem;
+  }
+  .logoDiv{
+    width: 30vw;
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap: 15px;
+    padding-left: 0vw;
+    padding-top: 5vh;
   }
 }
 
@@ -96,8 +100,6 @@
 @media screen and (max-width: 425px){
 
   .main{
-    display: flex;
-    flex-direction: column;
     padding-left: 0;
 
   }

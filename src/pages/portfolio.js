@@ -7,7 +7,7 @@ import styles from '@/styles/Portfolio.module.css'
 export default function Portifolio() {
   return (
     <div className={styles.main}>
-      <h1 className={styles.title}>Some of my recently work</h1>
+      <h1 className={styles.title}>Some of my recent work</h1>
       <div className={styles.container}>
         <div className={styles.card}>
           <iframe className={styles.iframe} loading="lazy"

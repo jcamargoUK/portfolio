@@ -52,7 +52,6 @@
   border: 0;
   outline: 0;
   padding: 1em;
-  border-radius: 8px;
   display: block;
   width: 80%;
   height: 50px;
@@ -61,7 +60,7 @@
   font-size: .8em;
   margin-left: 3vw;
   color: #FC0606;
-  border: 1.5px solid #FC0606;
+  border-bottom: 1.5px solid #FC0606;
   background-color: #07000000;
 }
 
@@ -69,16 +68,15 @@
   border: 0;
   outline: 0;
   padding: 1em;
-  border-radius: 8px;
   display: block;
   width: 80%;
-  height: 170px;
-  margin-top: 1em;
+  /* height: 170px; */
+  margin-top: 6em;
   resize: none;
-  font-size: 1em;
+  font-size: .8em;
   margin-left: 3vw;
   color: #FC0606;
-  border: 1.5px solid #FC0606;
+  border-bottom: 1.5px solid #FC0606;
   background-color: #07000000;
 }
 
@@ -96,10 +94,10 @@
   border: 0;
   outline: 0;
   border-radius: 100px;
-  width: 14vw;
-  height: 7vh;
+  width: 9vw;
+  height: 6vh;
   margin: auto;
-  margin-top: 2vh; 
+  margin-top: 3vh; 
   color: #FC0606;
   border: 1.5px solid #FC0606;
   background-color: #07000000;

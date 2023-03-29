@@ -30,7 +30,7 @@ function ContactForm() {
         from_name: form.name,
         message: form.message,
       },
-      'tligEdje5qeglTeZy'
+      process.env.NEXT_PUBLIC_PUBLIC_KEY
     )
     .then(() => {
       setLoading(false);

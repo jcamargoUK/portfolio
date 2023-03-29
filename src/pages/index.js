@@ -4,6 +4,7 @@ import Getting_In_Touch_Button from '../../components/Layout/Getting_In_Touch_Bu
 import ArrowDown from '../../components/Layout/Arrow_Container/ArrowDown'
 import Image from 'next/legacy/image'
 
+
 export default function Home() {
 
   return (

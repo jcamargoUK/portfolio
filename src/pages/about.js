@@ -19,8 +19,8 @@ export default function About() {
             className={styles.logoContainer}
             src='/assets/typescript.png'
             // layout='fill'
-            width={60}
-            height={60}
+            width={100}
+            height={100}
           />
           <Image 
             className={styles.logoContainer}
@@ -88,7 +88,7 @@ export default function About() {
         </div> 
       </div>
       <Getting_In_Touch_Button />
-      <ArrowDown />
+      {/* <ArrowDown /> */}
     </div>
   )
 }

@@ -41,14 +41,15 @@
   /* height: 70vh; */
   display: grid;
   grid-template-columns: auto auto auto;
-  grid-gap: 15px;
+  grid-gap: 25px;
   padding-left: 10vw;
   padding-top: 10vh;
+
 }
 .logoContainer{
   display: block;
-  width: 45px;
-  height: 50px;
+  width: 65px;
+  height: 65px;
 }
 
 
@@ -76,6 +77,7 @@
 @media screen and (max-width: 900px){
   .container{
     flex-direction: column;
+
   }
   .about{
     width: 90vw;
@@ -89,13 +91,17 @@
     grid-template-columns: auto auto auto auto auto;
     grid-gap: 15px;
     padding-left: 0vw;
-    padding-top: 5vh;
+    padding-top: 15vh;
   }
 }
 
 @media screen and (max-width: 768px){
   .about{
-    font-size: 2.8vw;
+    font-size: 2.6vw;
+
+  }
+  .logoDiv{
+    width: 38vw;
   }
 }
 
@@ -103,10 +109,14 @@
 
   .main{
     padding-left: 0;
-
+  }
+  .logoDiv{
+    width:44vw;
+    margin-top: 0;
+    padding-top: 3vh;
   }
   .about{
-    font-size: 4.2vw;
+    font-size: 3.8vw;
     width: 100vw;
     padding: 0.5rem;
     padding-top: 0;
@@ -115,7 +125,7 @@
 
 @media screen and (max-width: 375px){
   .about{
-    font-size: 5.2vw;
+    font-size: 4.2vw;
     width: 100vw;
     padding: 0.5rem;
     padding-top: 0;

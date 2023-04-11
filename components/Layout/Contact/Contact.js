@@ -55,11 +55,11 @@ function ContactForm() {
         <div className={styles.formContainer}>
           <form ref={formRef} className={styles.cf} onSubmit={handleSubmit}>
             <div className={styles.inputContainer}>
-              <input className={styles.input} type='text' placeholder='Name' name='name' onChange={handleChange} />
-              <input className={styles.input} type='email' placeholder='Email address' name='email' onChange={handleChange} />
+              <input className={styles.input} type='text' required placeholder='Name' name='name' onChange={handleChange} />
+              <input className={styles.input} type='email' required placeholder='Email address' name='email' onChange={handleChange} />
             </div>
             <div>
-              <textarea className={styles.textArea} name='message' type='text' placeholder='Message' onChange={handleChange}></textarea>
+              <textarea className={styles.textArea} name='message' required type='text' placeholder='Message' onChange={handleChange}></textarea>
             </div>
             <div className={styles.submitContainer}>
               <input className={styles.submit} type='submit' value='Submit' />

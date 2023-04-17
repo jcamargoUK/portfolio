@@ -32,6 +32,7 @@
   min-width: 18rem;
   justify-content: space-between;
   padding-right: 2rem;
+  text-transform: uppercase;
 }
 
 .link:hover{
@@ -42,22 +43,28 @@
 @media screen and (max-width: 625px) {
   .toggle {
     display: block;
+    font-size: 20px;
   }
 
   .links {
     display: none;
     flex-direction: column;
-    align-items: end;
+    align-items: center;
     position: absolute;
     top: 75px;
     /* left: 0; */
     right: 23px;
     /* padding: 10px; */
-    background-color: #050505;
+    background-color: gray;
     z-index: 1;
-    width: 40vw;
+    min-width:25vw;
     z-index: 100;
+    padding-right: 0;
+    border-radius: 10px;
+    box-shadow: 5px 10px 10px rgba(246, 2, 2, 0.5);
+
   }
+  
 
   .links.open {
     display: flex;
@@ -65,8 +72,7 @@
 
   .links li {
     margin: 12px 0;
-    font-size: 1.2rem;
-    
+    font-size: 1rem;
   }
 }
 

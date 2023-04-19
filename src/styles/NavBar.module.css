@@ -29,7 +29,7 @@
 .links{
   display: flex;
   text-decoration: none;
-  min-width: 18rem;
+  min-width: 28rem;
   justify-content: space-between;
   padding-right: 2rem;
   text-transform: uppercase;

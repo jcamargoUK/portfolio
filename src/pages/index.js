@@ -16,16 +16,16 @@ export default function Home() {
         </div>
         <div className={styles.imageContainer}>
           <div className={styles.image}>
-            <Image
+            {/* <Image
               src='/assets/pc.jpg'
               layout='fill'
               alt="PC"
-            />
+            /> */}
           </div>
         </div>
       </div>
       <Getting_In_Touch_Button />
-      <ArrowDown />
+      {/* <ArrowDown /> */}
     </div>
   )
 }

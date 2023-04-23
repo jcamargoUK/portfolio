@@ -1,6 +1,8 @@
 import emailjs from '@emailjs/browser';
-import styles from "../../../src/styles/ContactUs.module.css"
-import { useRef, useState } from 'react';
+import styles from "@/styles/ContactUs.module.css"
+import { useRef, useState, useEffect } from 'react';
+import RINGS from "vanta/dist/vanta.rings.min";
+import * as THREE from 'three'
 
 // Contact Form
 function ContactForm() {
@@ -68,7 +70,7 @@ function ContactForm() {
           </form>
         </div>
         <div className={styles.mapContainer}>
-        <iframe 
+        {/* <iframe 
           className={styles.iFrame}
           src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d19339.78064347546!2d-0.1088386137867733!3d51.42765460513411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1679383485819!5m2!1sen!2suk" 
           // layout='fill'
@@ -77,7 +79,7 @@ function ContactForm() {
           // style="border:0;" 
           // allowfullscreen="" 
           loading="lazy" 
-          referrerPolicy="no-referrer-when-downgrade"/>
+          referrerPolicy="no-referrer-when-downgrade"/> */}
         </div>
       </div>
     </div>

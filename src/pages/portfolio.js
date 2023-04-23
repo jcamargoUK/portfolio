@@ -22,7 +22,7 @@ export default function Portifolio() {
         color: 0x7f585,
         points: 7.00,
         maxDistance: 24.00,
-        spacing: 18.00,
+        spacing: 25.00,
         backgroundColor: 0x0,
         color: 0x0,
         THREE

@@ -33,8 +33,8 @@ export default function About() {
     }
   }, [vantaEffect])
   return (
-    <div className={styles.main} ref={vantaRef}>
-      {/* <div className={styles.container}> */}
+    <div className={styles.main} >
+      <div className={styles.container} ref={vantaRef}>
         <div className={styles.about}>
           <h1><span>A</span>bout <span>M</span>e</h1>
           <p className={styles.p}><span>I`m</span> a front end engineer passionate about creating visually stunning websites with exceptional user experience.</p>
@@ -42,7 +42,7 @@ export default function About() {
           <p><span>My</span> goal is to produce top-notch code optimised for performance and scalability,
             helping my clients establish a strong online presence.</p>
         </div>
-      {/* </div> */}
+      </div>
     </div>
 
   )

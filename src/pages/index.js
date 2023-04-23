@@ -1,4 +1,4 @@
-import Head from 'next/head'
+// import Head from 'next/head'
 import RINGS from "vanta/dist/vanta.rings.min";
 import * as THREE from 'three'
 import styles from '@/styles/Home.module.css'
@@ -34,29 +34,14 @@ export default function Home() {
   }, [vantaEffect])
 
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Julio Cezar</title>
-      </Head>
-    <div className={styles.main} ref={vantaRef}>
-      <div className={styles.container}>
-        <div className={styles.welcomeMessage}>
-          <h1><span classname={styles.flip}>Hi. </span> Im <span className={styles.nameSpan1}>J</span><span className={styles.nameSpan2}>u</span><span className={styles.nameSpan3}>l</span><span className={styles.nameSpan4}>i</span><span className={styles.nameSpan5}>o</span>, <br className={styles.breakLine} />
-           a Web Developer based in <span className={styles.nameSpan6}>L</span><span className={styles.nameSpan5}>o</span><span className={styles.nameSpan4}>n</span><span className={styles.nameSpan3}>d</span><span className={styles.nameSpan2}>o</span><span className={styles.nameSpan1}>n</span></h1>
-        </div>
-        <div className={styles.imageContainer}>
-          <div className={styles.image}>
-            {/* <Image
-              src='/assets/pc.jpg'
-              layout='fill'
-              alt="PC"
-            /> */}
+      <div className={styles.main} ref={vantaRef}>
+        <div className={styles.container}>
+          <div className={styles.welcomeMessage}>
+            <h1><span classname={styles.flip}>Hi. </span> Im <span className={styles.nameSpan1}>J</span><span className={styles.nameSpan2}>u</span><span className={styles.nameSpan3}>l</span><span className={styles.nameSpan4}>i</span><span className={styles.nameSpan5}>o</span>, <br className={styles.breakLine} />
+              a Web Developer based in <span className={styles.nameSpan6}>L</span><span className={styles.nameSpan5}>o</span><span className={styles.nameSpan4}>n</span><span className={styles.nameSpan3}>d</span><span className={styles.nameSpan2}>o</span><span className={styles.nameSpan1}>n</span></h1>
           </div>
         </div>
+        <Getting_In_Touch_Button />
       </div>
-      <Getting_In_Touch_Button />
-      {/* <ArrowDown /> */}
-    </div>
-    </div>
   )
 }
